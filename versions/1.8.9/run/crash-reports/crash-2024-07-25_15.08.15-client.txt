@@ -1,0 +1,121 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 7/25/24, 3:08 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Cannot read field "x" because "entity" is null
+	at net.minecraft.world.World.method_3631(World.java:1075)
+	at net.minecraft.client.render.GameRenderer.updateFog(GameRenderer.java:1584)
+	at net.minecraft.client.render.GameRenderer.renderWorld(GameRenderer.java:1164)
+	at net.minecraft.client.render.GameRenderer.renderWorld(GameRenderer.java:1149)
+	at net.minecraft.client.render.GameRenderer.render(GameRenderer.java:1002)
+	at net.minecraft.client.MinecraftClient.runGameLoop(MinecraftClient.java:915)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:325)
+	at net.minecraft.client.main.Main.main(Main.java:124)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:470)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.world.World.method_3631(World.java:1075)
+	at net.minecraft.client.render.GameRenderer.updateFog(GameRenderer.java:1584)
+	at net.minecraft.client.render.GameRenderer.renderWorld(GameRenderer.java:1164)
+	at net.minecraft.client.render.GameRenderer.renderWorld(GameRenderer.java:1149)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 0 total; []
+	Chunk stats: MultiplayerChunkCache: 0, 0
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: 8.00,64.00,8.00 - World: (8,64,8), Chunk: (at 8,4,8 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 0 game time, 0 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 0 total; []
+	Retry entities: 0 total; []
+	Server brand: ~~ERROR~~ NullPointerException: Cannot invoke "net.minecraft.entity.player.ClientPlayerEntity.getServerBrand()" because "net.minecraft.client.world.ClientWorld.method_5708(net.minecraft.client.world.ClientWorld).player" is null
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.addToCrashReport(ClientWorld.java:309)
+	at net.minecraft.client.MinecraftClient.addSystemDetailsToCrashReport(MinecraftClient.java:4393)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:339)
+	at net.minecraft.client.main.Main.main(Main.java:124)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:470)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.11, JetBrains s.r.o.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), JetBrains s.r.o.
+	Memory: 223206360 bytes (212 MB) / 566231040 bytes (540 MB) up to 4223664128 bytes (4028 MB)
+	JVM Flags: 1 total; -XX:+AllowEnhancedClassRedefinition
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	Fabric Mods: 
+		carbon: Carbon 1.0.0
+		essence: Essence 0.0.1
+		fabric-language-kotlin: Fabric Language Kotlin 1.10.14+kotlin.1.9.20
+		fabricloader: Fabric Loader 0.15.11
+		java: OpenJDK 64-Bit Server VM 17
+		legacy-fabric-api: Legacy Fabric API 1.9.4+1.8.9
+		legacy-fabric-api-base: Legacy Fabric API Base 1.1.0+1.8.9+7c545fdbe239
+		legacy-fabric-api-base-common: Legacy Fabric API Base Common 1.1.0+7c545fdbe692
+		legacy-fabric-command-api-v1: Legacy Fabric Command API (V1) 1.0.0+7c545fdbdb92
+		legacy-fabric-command-api-v2: Legacy Fabric Command API (v2) 1.0.1+1.8.9+7c545fdb0039
+		legacy-fabric-crash-report-info-v1: Legacy Fabric Crash Report Info (v1) 1.0.0+7c545fdb4992
+		legacy-fabric-entity-events-v1: Legacy Fabric Entity Events (V1) 1.0.0+1.8.9+095a57590739
+		legacy-fabric-entity-events-v1-common: Legacy Fabric Entity Events (V1) 1.0.0+095a57593e92
+		legacy-fabric-gamerule-api-v1: Fabric Gamerule API (v1) 1.0.0+7c545fdb4c92
+		legacy-fabric-item-groups-v1: Legacy Fabric Item Groups (V1) 2.0.0+1.8.9+7c545fdbdb39
+		legacy-fabric-item-groups-v1-common: Legacy Fabric Item Groups (V1) 2.0.0+095a57594e92
+		legacy-fabric-keybinding-api-v1: Legacy Fabric Keybinding API (V1) 1.0.1+1.8.9+7c545fdb2839
+		legacy-fabric-keybinding-api-v1-common: Legacy Fabric Keybinding API (V1) 1.0.1+7c545fdb5992
+		legacy-fabric-lifecycle-events-v1: Legacy Fabric Lifecycle Events (V1) 1.0.1+1.8.9+095a5759f739
+		legacy-fabric-lifecycle-events-v1-common: Legacy Fabric Lifecycle Events (V1) 1.0.1+095a57597c92
+		legacy-fabric-logger-api-v1: Legacy Fabric Logger API (v1) 1.0.4+7c545fdb7292
+		legacy-fabric-networking-api-v1: Legacy Fabric Networking API (v1) 2.0.1+1.8.9+7c545fdb1839
+		legacy-fabric-networking-api-v1-common: Legacy Fabric Networking API (v1) 2.0.1+7c545fdb6192
+		legacy-fabric-permissions-api-v1: Legacy Fabric Permissions API (v2) 1.0.1+1.8.9+7c545fdb7839
+		legacy-fabric-permissions-api-v1-common: Legacy Fabric Permissions API (v1) 1.0.1+7c545fdba792
+		legacy-fabric-registry-sync-api-v1: Legacy Fabric Registry Sync API (V1) 2.2.0+1.8.9+7c545fdb6e39
+		legacy-fabric-registry-sync-api-v1-common: Legacy Fabric Registry Sync API (V1) 2.2.0+1c4806cdcb92
+		legacy-fabric-rendering-api-v1: Legacy Fabric Rendering API (V1) 1.0.0+1.8.9+7c545fdbba39
+		legacy-fabric-rendering-api-v1-common: Legacy Fabric Rendering API (V1) 1.0.0+7c545fdb6992
+		legacy-fabric-resource-loader-v1: Legacy Fabric Resource Loader (V1) 2.1.1+1.8.9+7c545fdb4d39
+		legacy-fabric-resource-loader-v1-common: Legacy Fabric Resource Loader (V1) Common 2.1.1+7c545fdbf192
+		legacy-lwjgl3: Legacy LWJGL3 1.0.0
+		minecraft: Minecraft 1.8.9
+		mixinextras: MixinExtras 0.3.5
+		modmenu: Mod Menu 1.1.0
+		phosphor-legacy: Phosphor-Legacy 0.1.3+1.8.9
+	Launched Version: Fabric
+	LWJGL: 3.3.3-snapshot
+	OpenGL: NVIDIA GeForce RTX 2050/PCIe/SSE2 GL version 4.6.0 NVIDIA 556.12, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: <unknown>

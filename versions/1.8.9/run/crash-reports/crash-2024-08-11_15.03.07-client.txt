@@ -1,0 +1,110 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 8/11/24, 3:03 PM
+Description: Initializing game
+
+java.lang.RuntimeException: Could not execute entrypoint stage 'client' due to errors, provided by 'essence'!
+	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$2(FabricLoaderImpl.java:388)
+	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:386)
+	at net.fabricmc.loader.impl.game.minecraft.Hooks.startClient(Hooks.java:53)
+	at net.minecraft.client.MinecraftClient.initializeGame(MinecraftClient.java:349)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:310)
+	at net.minecraft.client.main.Main.main(Main.java:124)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:470)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at cc.essence.core.Core.init(Core.kt:52)
+	at cc.essence.core.version.Version.init(Version.kt:15)
+	at cc.essence.client.Client.onInitializeClient(Client.kt:73)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:384)
+	... 8 more
+Caused by: java.lang.NullPointerException: Cannot invoke "cc.essence.abstraction.client.options.Options.essence$forwardKey()" because "this.options" is null
+	at cc.essence.core.feature.module.impl.ModuleKeystrokes.<init>(ModuleKeystrokes.kt:21)
+	... 17 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$2(FabricLoaderImpl.java:388)
+	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:386)
+	at net.fabricmc.loader.impl.game.minecraft.Hooks.startClient(Hooks.java:53)
+	at net.minecraft.client.MinecraftClient.initializeGame(MinecraftClient.java:349)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:310)
+	at net.minecraft.client.main.Main.main(Main.java:124)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:470)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.11, JetBrains s.r.o.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), JetBrains s.r.o.
+	Memory: 557471984 bytes (531 MB) / 742391808 bytes (708 MB) up to 4223664128 bytes (4028 MB)
+	JVM Flags: 1 total; -XX:+AllowEnhancedClassRedefinition
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Fabric Mods: 
+		essence: Essence 0.0.1
+		fabric-language-kotlin: Fabric Language Kotlin 1.10.14+kotlin.1.9.20
+		fabricloader: Fabric Loader 0.15.11
+		java: OpenJDK 64-Bit Server VM 17
+		legacy-fabric-api: Legacy Fabric API 1.9.4+1.8.9
+		legacy-fabric-api-base: Legacy Fabric API Base 1.1.0+1.8.9+7c545fdbe239
+		legacy-fabric-api-base-common: Legacy Fabric API Base Common 1.1.0+7c545fdbe692
+		legacy-fabric-command-api-v1: Legacy Fabric Command API (V1) 1.0.0+7c545fdbdb92
+		legacy-fabric-command-api-v2: Legacy Fabric Command API (v2) 1.0.1+1.8.9+7c545fdb0039
+		legacy-fabric-crash-report-info-v1: Legacy Fabric Crash Report Info (v1) 1.0.0+7c545fdb4992
+		legacy-fabric-entity-events-v1: Legacy Fabric Entity Events (V1) 1.0.0+1.8.9+095a57590739
+		legacy-fabric-entity-events-v1-common: Legacy Fabric Entity Events (V1) 1.0.0+095a57593e92
+		legacy-fabric-gamerule-api-v1: Fabric Gamerule API (v1) 1.0.0+7c545fdb4c92
+		legacy-fabric-item-groups-v1: Legacy Fabric Item Groups (V1) 2.0.0+1.8.9+7c545fdbdb39
+		legacy-fabric-item-groups-v1-common: Legacy Fabric Item Groups (V1) 2.0.0+095a57594e92
+		legacy-fabric-keybinding-api-v1: Legacy Fabric Keybinding API (V1) 1.0.1+1.8.9+7c545fdb2839
+		legacy-fabric-keybinding-api-v1-common: Legacy Fabric Keybinding API (V1) 1.0.1+7c545fdb5992
+		legacy-fabric-lifecycle-events-v1: Legacy Fabric Lifecycle Events (V1) 1.0.1+1.8.9+095a5759f739
+		legacy-fabric-lifecycle-events-v1-common: Legacy Fabric Lifecycle Events (V1) 1.0.1+095a57597c92
+		legacy-fabric-logger-api-v1: Legacy Fabric Logger API (v1) 1.0.4+7c545fdb7292
+		legacy-fabric-networking-api-v1: Legacy Fabric Networking API (v1) 2.0.1+1.8.9+7c545fdb1839
+		legacy-fabric-networking-api-v1-common: Legacy Fabric Networking API (v1) 2.0.1+7c545fdb6192
+		legacy-fabric-permissions-api-v1: Legacy Fabric Permissions API (v2) 1.0.1+1.8.9+7c545fdb7839
+		legacy-fabric-permissions-api-v1-common: Legacy Fabric Permissions API (v1) 1.0.1+7c545fdba792
+		legacy-fabric-registry-sync-api-v1: Legacy Fabric Registry Sync API (V1) 2.2.0+1.8.9+7c545fdb6e39
+		legacy-fabric-registry-sync-api-v1-common: Legacy Fabric Registry Sync API (V1) 2.2.0+1c4806cdcb92
+		legacy-fabric-rendering-api-v1: Legacy Fabric Rendering API (V1) 1.0.0+1.8.9+7c545fdbba39
+		legacy-fabric-rendering-api-v1-common: Legacy Fabric Rendering API (V1) 1.0.0+7c545fdb6992
+		legacy-fabric-resource-loader-v1: Legacy Fabric Resource Loader (V1) 2.1.1+1.8.9+7c545fdb4d39
+		legacy-fabric-resource-loader-v1-common: Legacy Fabric Resource Loader (V1) Common 2.1.1+7c545fdbf192
+		legacy-lwjgl3: Legacy LWJGL3 1.0.0
+		minecraft: Minecraft 1.8.9
+		mixinextras: MixinExtras 0.3.5
+		modmenu: Mod Menu 1.1.0
+		phosphor-legacy: Phosphor-Legacy 0.1.3+1.8.9
+	Launched Version: Fabric
+	LWJGL: 3.3.3-snapshot
+	GL Caps: 
+	Using VBOs: ~~ERROR~~ NullPointerException: Cannot read field "vbo" because "this.options" is null
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Client (map_client.txt)
+	Resource Packs: ~~ERROR~~ NullPointerException: Cannot read field "resourcePacks" because "this.options" is null
+	Current Language: ~~ERROR~~ NullPointerException: Cannot invoke "net.minecraft.client.resource.language.LanguageManager.getLanguage()" because "this.languageManager" is null
+	Profiler Position: N/A (disabled)
+	CPU: <unknown>

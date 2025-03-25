@@ -1,0 +1,17 @@
+Opening loading screen
+Preparing loading screen for entrypoint 'preLaunch'
+Calling entrypoint container for mod 'mod-loading-screen'
+Calling entrypoint container for mod 'legacy-fabric-registry-sync-api-v1'
+Finished loading screen for entrypoint 'preLaunch'
+Preparing loading screen for entrypoint 'main'
+Calling entrypoint container for mod 'phosphor-legacy'
+Calling entrypoint container for mod 'legacy-lwjgl3'
+Calling entrypoint container for mod 'legacy-fabric-command-api-v1'
+Finished loading screen for entrypoint 'main'
+Preparing loading screen for entrypoint 'client'
+Calling entrypoint container for mod 'legacy-fabric-command-api-v2'
+Calling entrypoint container for mod 'modmenu'
+Calling entrypoint container for mod 'essence'
+Calling entrypoint container for mod 'legacy-fabric-registry-sync-api-v1-common'
+Finished loading screen for entrypoint 'client'
+IPC client exiting cleanly

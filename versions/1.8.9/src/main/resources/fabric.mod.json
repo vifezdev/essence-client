@@ -1,0 +1,35 @@
+{
+  "id": "essence",
+  "version": "0.0.1",
+  "name": "Essence",
+  "description": "",
+  "authors": [
+    ""
+  ],
+  "contact": {
+    "homepage": "https://legacyfabric.net/",
+    "sources": "https://github.com/Legacy-Fabric/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "images/logo.png",
+  "environment": "*",
+  "schemaVersion":  1,
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "cc.essence.client.Client"
+      }
+    ]
+  },
+  "mixins": [
+    "essence.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "1.8.9",
+    "fabric-language-kotlin": ">=1.10.14+kotlin.1.9.20",
+    "legacy-lwjgl3": "*",
+    "modmenu": ">=1.1.0"
+  }
+}

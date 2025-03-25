@@ -1,0 +1,139 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 7/26/24, 10:13 AM
+Description: Updating screen events
+
+java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at cc.essence.client.Client$onInitializeClient$1.invoke(Client.kt:35)
+	at cc.essence.client.Client$onInitializeClient$1.invoke(Client.kt:34)
+	at cc.essence.core.ui.ScreenMapper.open(ScreenMapper.kt:13)
+	at cc.essence.core.ui.gui.GameMenu$init$5.invoke(GameMenu.kt:28)
+	at cc.essence.core.ui.gui.GameMenu$init$5.invoke(GameMenu.kt:27)
+	at cc.essence.core.ui.elements.Button.mouse(Button.kt:70)
+	at cc.essence.core.ui.gui.GameMenu.mouse(GameMenu.kt:50)
+	at cc.essence.client.bridge.ClientImpl$ZSC.mouseReleased(ClientImpl.kt:45)
+	at net.minecraft.client.gui.screen.Screen.handleMouse(Screen.java:419)
+	at net.minecraft.client.gui.screen.Screen.handleInput(Screen.java:390)
+	at net.minecraft.client.MinecraftClient.tick(MinecraftClient.java:1498)
+	at net.minecraft.client.MinecraftClient.runGameLoop(MinecraftClient.java:889)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:325)
+	at net.minecraft.client.main.Main.main(Main.java:124)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:470)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at cc.essence.client.Client$onInitializeClient$1.invoke(Client.kt:35)
+	at cc.essence.client.Client$onInitializeClient$1.invoke(Client.kt:34)
+	at cc.essence.core.ui.ScreenMapper.open(ScreenMapper.kt:13)
+	at cc.essence.core.ui.gui.GameMenu$init$5.invoke(GameMenu.kt:28)
+	at cc.essence.core.ui.gui.GameMenu$init$5.invoke(GameMenu.kt:27)
+	at cc.essence.core.ui.elements.Button.mouse(Button.kt:70)
+	at cc.essence.core.ui.gui.GameMenu.mouse(GameMenu.kt:50)
+	at cc.essence.client.bridge.ClientImpl$ZSC.mouseReleased(ClientImpl.kt:45)
+	at net.minecraft.client.gui.screen.Screen.handleMouse(Screen.java:419)
+	at net.minecraft.client.gui.screen.Screen.handleInput(Screen.java:390)
+
+-- Affected screen --
+Details:
+	Screen name: cc.essence.client.bridge.ClientImpl.ZSC
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [ClientPlayerEntity['Player0'/1059, l='MpServer', x=286.96, y=74.02, z=189.62]]
+	Chunk stats: MultiplayerChunkCache: 579, 579
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: 287.00,64.00,195.00 - World: (287,64,195), Chunk: (at 15,4,3 in 17,12; contains blocks 272,0,192 to 287,255,207), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 1416 game time, 1416 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 86 total; [ZombieEntity['Zombie'/1286, l='MpServer', x=344.50, y=17.00, z=146.50], CreeperEntity['Creeper'/1287, l='MpServer', x=345.09, y=17.00, z=144.09], ClientPlayerEntity['Player0'/1059, l='MpServer', x=286.96, y=74.02, z=189.62], SkeletonEntity['Skeleton'/1573, l='MpServer', x=341.50, y=22.00, z=109.50], CreeperEntity['Creeper'/838, l='MpServer', x=209.50, y=28.00, z=172.50], BatEntity['Bat'/840, l='MpServer', x=209.22, y=31.10, z=171.22], ZombieEntity['Zombie'/1609, l='MpServer', x=215.41, y=19.00, z=242.91], ZombieEntity['Zombie'/1610, l='MpServer', x=219.98, y=19.00, z=248.48], ZombieEntity['Zombie'/1611, l='MpServer', x=218.63, y=24.00, z=240.02], BatEntity['Bat'/845, l='MpServer', x=210.63, y=20.10, z=239.47], CreeperEntity['Creeper'/869, l='MpServer', x=248.47, y=29.00, z=163.00], ZombieEntity['Zombie'/870, l='MpServer', x=229.69, y=26.00, z=163.09], CreeperEntity['Creeper'/871, l='MpServer', x=225.75, y=27.00, z=164.84], SquidEntity['Squid'/875, l='MpServer', x=225.91, y=54.50, z=206.03], CreeperEntity['Creeper'/877, l='MpServer', x=242.31, y=27.00, z=226.47], CreeperEntity['Creeper'/1395, l='MpServer', x=341.03, y=18.00, z=151.03], CreeperEntity['Creeper'/1396, l='MpServer', x=335.78, y=19.00, z=154.13], SpiderEntity['Spider'/1397, l='MpServer', x=339.69, y=17.91, z=151.94], CowEntity['Cow'/891, l='MpServer', x=242.19, y=64.00, z=182.44], ZombieEntity['Zombie'/1659, l='MpServer', x=213.50, y=18.00, z=259.50], CowEntity['Cow'/892, l='MpServer', x=251.50, y=63.00, z=174.50], EndermanEntity['Enderman'/1660, l='MpServer', x=237.50, y=23.00, z=205.50], SkeletonEntity['Skeleton'/1661, l='MpServer', x=236.50, y=23.00, z=201.50], ZombieEntity['Zombie'/894, l='MpServer', x=249.50, y=23.00, z=178.50], CowEntity['Cow'/895, l='MpServer', x=257.16, y=68.00, z=170.84], WitchEntity['Witch'/897, l='MpServer', x=249.03, y=15.00, z=247.38], SquidEntity['Squid'/898, l='MpServer', x=239.91, y=59.38, z=249.69], SquidEntity['Squid'/900, l='MpServer', x=249.34, y=62.00, z=239.50], CreeperEntity['Creeper'/1413, l='MpServer', x=277.50, y=25.00, z=243.50], BatEntity['Bat'/1417, l='MpServer', x=258.25, y=16.10, z=259.75], SkeletonEntity['Skeleton'/906, l='MpServer', x=268.50, y=19.00, z=238.50], BatEntity['Bat'/910, l='MpServer', x=258.25, y=15.10, z=264.25], ZombieEntity['Zombie'/1687, l='MpServer', x=254.34, y=17.00, z=230.28], SpiderEntity['Spider'/1689, l='MpServer', x=254.50, y=17.00, z=228.78], SpiderEntity['Spider'/1690, l='MpServer', x=255.28, y=18.09, z=231.53], CowEntity['Cow'/925, l='MpServer', x=281.16, y=71.00, z=186.81], CowEntity['Cow'/926, l='MpServer', x=298.00, y=70.00, z=189.88], CowEntity['Cow'/927, l='MpServer', x=287.56, y=69.00, z=182.16], CowEntity['Cow'/928, l='MpServer', x=286.88, y=70.00, z=189.53], SquidEntity['Squid'/929, l='MpServer', x=281.94, y=61.94, z=225.91], SquidEntity['Squid'/938, l='MpServer', x=294.84, y=50.25, z=129.38], SquidEntity['Squid'/939, l='MpServer', x=296.50, y=51.91, z=136.44], SquidEntity['Squid'/940, l='MpServer', x=288.13, y=58.72, z=232.78], CreeperEntity['Creeper'/941, l='MpServer', x=292.50, y=31.00, z=255.50], SkeletonEntity['Skeleton'/943, l='MpServer', x=288.72, y=30.00, z=264.63], SquidEntity['Squid'/950, l='MpServer', x=306.19, y=45.94, z=129.56], BatEntity['Bat'/1718, l='MpServer', x=247.25, y=17.04, z=233.48], SkeletonEntity['Skeleton'/951, l='MpServer', x=317.50, y=28.00, z=193.50], ZombieEntity['Zombie'/1466, l='MpServer', x=252.50, y=30.00, z=168.50], CreeperEntity['Creeper'/1467, l='MpServer', x=252.50, y=30.00, z=169.50], SquidEntity['Squid'/958, l='MpServer', x=333.25, y=51.34, z=161.34], SquidEntity['Squid'/959, l='MpServer', x=334.63, y=47.22, z=157.22], SquidEntity['Squid'/960, l='MpServer', x=317.00, y=55.84, z=165.75], BatEntity['Bat'/961, l='MpServer', x=328.21, y=19.88, z=183.14], BatEntity['Bat'/962, l='MpServer', x=327.35, y=15.05, z=187.47], SquidEntity['Squid'/964, l='MpServer', x=329.69, y=51.91, z=192.53], SquidEntity['Squid'/965, l='MpServer', x=318.66, y=57.59, z=171.09], SquidEntity['Squid'/966, l='MpServer', x=325.66, y=59.25, z=181.53], SquidEntity['Squid'/967, l='MpServer', x=324.38, y=56.06, z=171.22], CreeperEntity['Creeper'/1225, l='MpServer', x=215.50, y=23.00, z=218.50], ZombieEntity['Zombie'/970, l='MpServer', x=327.28, y=29.03, z=197.28], ZombieEntity['Zombie'/971, l='MpServer', x=321.50, y=28.00, z=195.69], SquidEntity['Squid'/975, l='MpServer', x=326.03, y=57.50, z=208.59], CreeperEntity['Creeper'/1749, l='MpServer', x=355.50, y=21.00, z=200.50], CreeperEntity['Creeper'/1750, l='MpServer', x=354.50, y=21.00, z=204.50], SquidEntity['Squid'/985, l='MpServer', x=346.66, y=49.63, z=131.59], SkeletonEntity['Skeleton'/986, l='MpServer', x=338.06, y=19.00, z=152.88], SkeletonEntity['Skeleton'/987, l='MpServer', x=343.50, y=17.00, z=147.50], SquidEntity['Squid'/989, l='MpServer', x=338.38, y=46.09, z=157.19], SquidEntity['Squid'/990, l='MpServer', x=347.97, y=50.94, z=146.84], SquidEntity['Squid'/991, l='MpServer', x=343.34, y=50.56, z=154.31], SquidEntity['Squid'/992, l='MpServer', x=348.47, y=52.19, z=152.63], SquidEntity['Squid'/993, l='MpServer', x=344.41, y=50.50, z=157.22], SquidEntity['Squid'/994, l='MpServer', x=349.28, y=55.72, z=152.34], SquidEntity['Squid'/995, l='MpServer', x=342.47, y=50.56, z=151.28], SquidEntity['Squid'/997, l='MpServer', x=332.03, y=49.28, z=164.28], SquidEntity['Squid'/998, l='MpServer', x=333.41, y=43.19, z=202.91], ZombieEntity['Zombie'/1255, l='MpServer', x=226.50, y=26.00, z=162.50], CreeperEntity['Creeper'/1256, l='MpServer', x=222.50, y=26.00, z=165.50], SquidEntity['Squid'/1000, l='MpServer', x=349.75, y=46.94, z=222.94], CreeperEntity['Creeper'/1257, l='MpServer', x=227.03, y=28.00, z=168.41], SquidEntity['Squid'/1001, l='MpServer', x=341.47, y=53.09, z=214.63], BatEntity['Bat'/1776, l='MpServer', x=214.51, y=17.28, z=266.07], SkeletonEntity['Skeleton'/1787, l='MpServer', x=208.50, y=14.00, z=190.50], SquidEntity['Squid'/1020, l='MpServer', x=352.19, y=43.59, z=216.94], CreeperEntity['Creeper'/1789, l='MpServer', x=252.50, y=13.00, z=140.50]]
+	Retry entities: 0 total; []
+	Server brand: fabric
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.addToCrashReport(ClientWorld.java:309)
+	at net.minecraft.client.MinecraftClient.addSystemDetailsToCrashReport(MinecraftClient.java:3893)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:334)
+	at net.minecraft.client.main.Main.main(Main.java:124)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:470)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.11, JetBrains s.r.o.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), JetBrains s.r.o.
+	Memory: 313911296 bytes (299 MB) / 874512384 bytes (834 MB) up to 4223664128 bytes (4028 MB)
+	JVM Flags: 1 total; -XX:+AllowEnhancedClassRedefinition
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	Fabric Mods: 
+		com_formdev_flatlaf: flatlaf 3.0
+		essence: Essence 0.0.1
+		fabric-language-kotlin: Fabric Language Kotlin 1.10.14+kotlin.1.9.20
+		fabricloader: Fabric Loader 0.15.11
+		java: OpenJDK 64-Bit Server VM 17
+		legacy-fabric-api: Legacy Fabric API 1.9.4+1.8.9
+		legacy-fabric-api-base: Legacy Fabric API Base 1.1.0+1.8.9+7c545fdbe239
+		legacy-fabric-api-base-common: Legacy Fabric API Base Common 1.1.0+7c545fdbe692
+		legacy-fabric-command-api-v1: Legacy Fabric Command API (V1) 1.0.0+7c545fdbdb92
+		legacy-fabric-command-api-v2: Legacy Fabric Command API (v2) 1.0.1+1.8.9+7c545fdb0039
+		legacy-fabric-crash-report-info-v1: Legacy Fabric Crash Report Info (v1) 1.0.0+7c545fdb4992
+		legacy-fabric-entity-events-v1: Legacy Fabric Entity Events (V1) 1.0.0+1.8.9+095a57590739
+		legacy-fabric-entity-events-v1-common: Legacy Fabric Entity Events (V1) 1.0.0+095a57593e92
+		legacy-fabric-gamerule-api-v1: Fabric Gamerule API (v1) 1.0.0+7c545fdb4c92
+		legacy-fabric-item-groups-v1: Legacy Fabric Item Groups (V1) 2.0.0+1.8.9+7c545fdbdb39
+		legacy-fabric-item-groups-v1-common: Legacy Fabric Item Groups (V1) 2.0.0+095a57594e92
+		legacy-fabric-keybinding-api-v1: Legacy Fabric Keybinding API (V1) 1.0.1+1.8.9+7c545fdb2839
+		legacy-fabric-keybinding-api-v1-common: Legacy Fabric Keybinding API (V1) 1.0.1+7c545fdb5992
+		legacy-fabric-lifecycle-events-v1: Legacy Fabric Lifecycle Events (V1) 1.0.1+1.8.9+095a5759f739
+		legacy-fabric-lifecycle-events-v1-common: Legacy Fabric Lifecycle Events (V1) 1.0.1+095a57597c92
+		legacy-fabric-logger-api-v1: Legacy Fabric Logger API (v1) 1.0.4+7c545fdb7292
+		legacy-fabric-networking-api-v1: Legacy Fabric Networking API (v1) 2.0.1+1.8.9+7c545fdb1839
+		legacy-fabric-networking-api-v1-common: Legacy Fabric Networking API (v1) 2.0.1+7c545fdb6192
+		legacy-fabric-permissions-api-v1: Legacy Fabric Permissions API (v2) 1.0.1+1.8.9+7c545fdb7839
+		legacy-fabric-permissions-api-v1-common: Legacy Fabric Permissions API (v1) 1.0.1+7c545fdba792
+		legacy-fabric-registry-sync-api-v1: Legacy Fabric Registry Sync API (V1) 2.2.0+1.8.9+7c545fdb6e39
+		legacy-fabric-registry-sync-api-v1-common: Legacy Fabric Registry Sync API (V1) 2.2.0+1c4806cdcb92
+		legacy-fabric-rendering-api-v1: Legacy Fabric Rendering API (V1) 1.0.0+1.8.9+7c545fdbba39
+		legacy-fabric-rendering-api-v1-common: Legacy Fabric Rendering API (V1) 1.0.0+7c545fdb6992
+		legacy-fabric-resource-loader-v1: Legacy Fabric Resource Loader (V1) 2.1.1+1.8.9+7c545fdb4d39
+		legacy-fabric-resource-loader-v1-common: Legacy Fabric Resource Loader (V1) Common 2.1.1+7c545fdbf192
+		legacy-lwjgl3: Legacy LWJGL3 1.0.0
+		minecraft: Minecraft 1.8.9
+		mixinextras: MixinExtras 0.3.5
+		mod-loading-screen: Mod Loading Screen 1.0.4
+		modmenu: Mod Menu 1.1.0
+		net_lenni0451_reflect: Reflect 1.0.2
+		phosphor-legacy: Phosphor-Legacy 0.1.3+1.8.9
+	Launched Version: Fabric
+	LWJGL: 3.3.3-snapshot
+	OpenGL: NVIDIA GeForce RTX 2050/PCIe/SSE2 GL version 4.6.0 NVIDIA 556.12, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: <unknown>

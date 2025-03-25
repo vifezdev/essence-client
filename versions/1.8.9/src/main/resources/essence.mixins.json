@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cc.essence.client.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "client.entity.MixinEntity",
+    "client.entity.MixinLivingEntity",
+    "client.world.MixinWorld"
+  ],
+  "client": [
+    "client.MixinMinecraft",
+    "client.gl.MixinFramebuffer",
+    "client.gui.screen.MixinGameMenuScreen",
+    "client.gui.screen.MixinScreen",
+    "client.gui.screen.MixinTitleScreen",
+    "client.options.MixinGameOptions",
+    "client.options.MixinKeyBinding",
+    "client.render.MixinCamera",
+    "client.render.MixinGameRenderer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
