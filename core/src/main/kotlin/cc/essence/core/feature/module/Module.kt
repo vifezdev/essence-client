@@ -53,7 +53,7 @@ abstract class Module(val name: String, val id: Short) {
         range: ClosedFloatingPointRange<Float>,
         step: Float = 1f,
         onChange: (SliderData<Float>) -> Unit = {},
-    ) = number(group, name, SliderData(current, range.start, range.endInclusive, step), onChange)
+    ): Setting<SliderData<Float>> = number(group, name, SliderData(current, range.start, range.endInclusive, step), onChange)
 
     fun double(
         group: SettingsGroup,

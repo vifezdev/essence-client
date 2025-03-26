@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3af0827-32ca-457b-99df-2ee037498022" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/cc/essence/abstraction/client/Minecraft.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/cc/essence/abstraction/client/Minecraft.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/cc/essence/bridge/impl/IClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/cc/essence/bridge/impl/IClient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/cc/essence/core/Core.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/cc/essence/core/Core.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/cc/essence/core/feature/module/Module.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/cc/essence/core/feature/module/Module.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/cc/essence/core/ui/elements/clickgui/page/PageHome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/cc/essence/core/ui/elements/clickgui/page/PageHome.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/.fabric/processedMods/modmenu-1.1.0-64b5720b4b825f21.jar" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/.fabric/processedMods/modmenu-1.1.0-64b5720b4b825f21.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/.fabric/processedMods/phosphor-legacy-0.1.3+1.8.9-64b5720b4b825f21.jar" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/.fabric/processedMods/phosphor-legacy-0.1.3+1.8.9-64b5720b4b825f21.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/fabricRegistry.dat" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/fabricRegistry.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/fabricRegistry.dat.1" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/fabricRegistry.dat.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/fabricRegistry.dat.2" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/fabricRegistry.dat.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/villages.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/villages_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/villages_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/villages_nether.dat" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/data/villages_nether.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/playerdata/2654e3c3-150d-3857-a426-0b141796a4e0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/playerdata/2654e3c3-150d-3857-a426-0b141796a4e0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-2.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-2.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-2.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-2.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-3.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-3.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-3.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/region/r.-3.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/stats/2654e3c3-150d-3857-a426-0b141796a4e0.json" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/saves/New World-/stats/2654e3c3-150d-3857-a426-0b141796a4e0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions/1.8.9/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/versions/1.8.9/run/usercache.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/core">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="essence-client" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="essence-client" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="essence-client" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="fabric" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vifezdev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Quexii/zenify.git",
+    "accountId": "3a67dd26-8bf0-41ed-9b76-e1e08f4d45a6"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2urXnXHfpySwYcYHidSfYI1fjHF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.2.0 [runClient].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/georg/IdeaProjects/Clients/Essence/1.0",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\georg\IdeaProjects\Clients\Essence\2.0\core\src\main\resources\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="2.0 [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.2.0 [runClient]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3af0827-32ca-457b-99df-2ee037498022" name="Changes" comment="" />
+      <created>1743007833995</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743007833995</updated>
+    </task>
+    <servers />
+  </component>
+</project>
