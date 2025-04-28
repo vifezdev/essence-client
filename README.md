@@ -6,7 +6,7 @@
 > *A Fabric-powered modular client for Minecraft 1.8.9, built with Java and Kotlin.*
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/yourusername/essence-client?style=for-the-badge" alt="License Badge"/>
+<img src="https://img.shields.io/github/license/vifezdev/essence-client?style=for-the-badge" alt="License Badge"/>
   <img src="https://img.shields.io/badge/Java-8%2B-blue?style=for-the-badge" alt="Java Version Badge"/>
   <img src="https://img.shields.io/badge/ModLoader-Fabric-blueviolet?style=for-the-badge" alt="Fabric Badge"/>
   <img src="https://img.shields.io/badge/Status-Source%20Available-lightgrey?style=for-the-badge" alt="Status Badge"/>
